@@ -8,3 +8,12 @@
 .plant-title{
     font-size: 20px;
 }
+.plant-card-action-btn{
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 5px 20px;
+    border: none;
+    margin: 0 20px;
+    cursor: pointer;
+}
