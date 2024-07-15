@@ -10,7 +10,7 @@ function Home() {
 
    const loadPlants= async ()=>{
    toast.loading("Loading Plants...")
-  const response  = await axios.get(`https://server-h3bd.onrender.com`)
+  const response  = await axios.get(`https://server-h3bd.onrender.com/Plants`)
   toast.dismiss()
   toast.success("Plant loaded successfully!")
   setPlants(response.data.data)
@@ -24,7 +24,8 @@ function Home() {
       <h1>Plants</h1>
       {
         Plants.map((Plant,i)=>{
-            const {_id,
+            const {
+              _id,
                 name,
                 category,
                 price,
