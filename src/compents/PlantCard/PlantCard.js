@@ -7,7 +7,7 @@ function PlantCard({ _id,name,category,price, description,loadPlants }) {
 
   const  deletePlant = async(PlantId)=>{
     const response = await axios.delete(`${process.env.REACT_APP_API_URL}/Plant/${PlantId}`)
-    toast.success(response.data.meassge)
+    toast.success(response.data.message)
     loadPlants()
 
   }
@@ -16,6 +16,8 @@ function PlantCard({ _id,name,category,price, description,loadPlants }) {
       <h1 className='plant-title'>{name}</h1>
       <p className='plant-price'>price:{price}</p>
       <p>{category}</p>
+      <p className='des'>{description}</p>
+      
     
       
       <div>

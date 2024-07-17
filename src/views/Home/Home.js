@@ -38,7 +38,7 @@ function Home() {
                 name={name}
                  category={category}
                   price={price}
-                   decription={description}
+                   description={description}
                  
                    loadPlants={ loadPlants}  />
                   )
