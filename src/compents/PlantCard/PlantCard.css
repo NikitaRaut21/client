@@ -1,8 +1,9 @@
 .plant-card{
-    border: 1px solid black;
+    border: 1px solid rgb(8, 8, 8);
     padding:  5px 20px;
     border-radius: 8px;
     margin: 20px;
+   
   
 }
 .plant-title{

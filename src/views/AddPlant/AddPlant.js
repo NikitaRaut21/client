@@ -34,9 +34,9 @@ function AddPlant() {
         
     }
   return (
-    <div>
-      <h1>AddPlant</h1>
-      <form>
+    <div className='plant-form'>
+      <h1 className='title-plant'>AddPlant🪴</h1>
+      <form >
         <input type='text'
         placeholder='Enter plant name'
         value ={name}
@@ -64,10 +64,10 @@ function AddPlant() {
         
 
 
-        <button type='button' onClick={addPlant}>AddPlant</button>
+        <button type='button' onClick={addPlant} className='add-btn'>AddPlant</button>
       </form>
       <br/>
-      <Link to="/">⬅️Back To home</Link>
+      <Link to="/" className='back-home'>⬅️Back To home</Link>
       <Toaster/>
     </div>
   )
